@@ -1,8 +1,8 @@
 function TranslationRow({ en, lv }) {
     return (
       <tr>
-        <td>{en}</td>
-        <td>{lv}</td>
+        <td className="col-en">{en}</td>
+        <td className="col-lv">{lv}</td>
       </tr>
     );
   }

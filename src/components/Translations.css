@@ -1,0 +1,47 @@
+/* Visa tabula */
+.gherkin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Galvene */
+  .gherkin-table th {
+    background-color: #f2f2f2;
+    padding: 12px;
+    text-align: left;
+    font-size: 1.1rem;
+  }
+  
+  /* Šūnas */
+  .gherkin-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Angļu kolonna */
+  .col-en {
+    color: #012169; /* UK blue */
+    font-weight: 600;
+  }
+  
+  /* Latviešu kolonna */
+  .col-lv {
+    color: #9e1b32; /* Latvijas karoga sarkanā */
+    font-weight: 600;
+  }
+  
+  /* Hover efekts */
+  .gherkin-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Responsīvi */
+  @media (max-width: 600px) {
+    .gherkin-table th,
+    .gherkin-table td {
+      font-size: 0.9rem;
+    }
+  }
+  
