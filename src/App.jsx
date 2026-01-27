@@ -15,6 +15,8 @@ function App() {
       <h3>Marinētie guŗķi :)</h3>
       <Translations />
 
+<a href="https://docs.google.com/document/d/1cIjfPCLvEDPf8k1o5KBH3tIzTEB0HP_Onl7KIWc4JSU/edit?usp=sharing">Saite uz googleDocs pareizu pierakstu</a>
+
       <header style={{textAlign: 'center', padding: '40px 20px'}}>
         <h1>Funkcionālo Iezīmju Konspekts</h1>
       </header>
