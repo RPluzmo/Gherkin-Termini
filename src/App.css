@@ -1,0 +1,188 @@
+/* --- GLOBĀLIE IESTATĪJUMI --- */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --bg-color: #f9f9f9;
+    --code-bg: #2d2d2d;
+    --code-text: #f8f8f2;
+    --text-color: #333;
+    --border-radius: 8px;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text-color);
+    background-color: #fff;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    color: var(--primary-color);
+    margin-top: 1.5em;
+  }
+  
+  h1 {
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  
+  /* --- KONTEINERI UN STRUKTŪRA --- */
+  .App {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  section {
+    background: #fff;
+    margin-bottom: 40px;
+    padding: 10px;
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    margin: 40px 0;
+  }
+  
+  /* --- 1. FEATURE KOMPONENTE --- */
+  .feature-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .feature-container li {
+    background: var(--bg-color);
+    margin: 5px 0;
+    padding: 10px;
+    border-left: 4px solid var(--accent-color);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  }
+  
+  .alert-box {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    margin-top: 20px;
+    border-left: 5px solid #ffc107;
+  }
+  
+  /* --- 2. USER STORY KOMPONENTE --- */
+  .user-story-section .code-block {
+    background-color: #eef2f5 !important; /* Pārrakstām inline stilus ja tādi ir */
+    border-left: 5px solid #2ecc71;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    font-family: monospace;
+    font-size: 1.1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  /* --- 3. SCENARIO KOMPONENTE (Gherkin skaidrojums) --- */
+  .scenario-explanation dl {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 10px;
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+  }
+  
+  .scenario-explanation dt {
+    font-weight: bold;
+    color: var(--accent-color);
+    text-align: right;
+    padding-right: 15px;
+    border-right: 2px solid #ddd;
+  }
+  
+  .scenario-explanation dd {
+    margin: 0;
+  }
+  
+  /* --- 4. RUBIKS KOMPONENTE --- */
+  .rubiks-section {
+    text-align: center;
+  }
+  
+  .visual-metaphor {
+    background: #fff;
+    padding: 20px;
+    display: inline-block;
+    border: 1px solid #eee;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  
+  .visual-metaphor img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .visual-metaphor p {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+  
+  pre {
+    background-color: var(--code-bg) !important;
+    color: var(--code-text);
+    padding: 20px !important;
+    border-radius: var(--border-radius);
+    overflow-x: auto;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.95em;
+    border-left: 5px solid var(--accent-color);
+    white-space: pre-wrap;
+  }
+  
+  .keyword-given { color: #569cd6; font-weight: bold; }
+  .keyword-when { color: #c586c0; font-weight: bold; }
+  .keyword-then { color: #4ec9b0; font-weight: bold; }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+ 
+  .full-width {
+    grid-column: auto; 
+  }
+  
+  .card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+    height: 100%; 
+    box-sizing: border-box;
+  }
+  
+  /* --- SPECIĀLĀS KLASES --- */
+  
+
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .full-width {
+      grid-column: span 1;
+    }
+  }
